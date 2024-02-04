@@ -1,0 +1,171 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* { 
+    font-family: 'Roboto', sans-serif
+}
+/* Background for everything */
+body {
+    background: #fff9f0
+}
+
+.h2 {
+    color: #372301;
+}
+
+.help-block {
+    max-width: 800px;
+}
+
+/* Override background that RShiny is adding */
+.skin-blue .wrapper, .skin-blue .main-sidebar, .content-wrapper {
+    background: none
+}
+.container-fluid {
+    padding: 0
+}
+
+/* Format header */
+.skin-blue .main-header {
+    background: #654612;
+}
+.skin-blue .main-header .navbar{
+    background: #654612;
+}
+.skin-blue .main-header .logo, .skin-blue .main-header .logo:hover{
+    color:#FEF8EF;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Fasthand', cursive; */
+    background: none !important;
+}
+.main-header .sidebar-toggle:before{
+    font-family: "Material Icons";
+    content: "menu";
+    font-size: 24px;
+    color: #FEF8EF
+}
+
+.main-header .sidebar-toggle {
+    padding: 8px 8px
+}
+
+/* Format sidebar */
+.skin-blue .main-sidebar {
+    background: #ede3d3
+}
+.sidebar-menu {
+    padding: 16px
+}
+.skin-blue .sidebar a {
+    color: #583E1A;
+    transition: 0.3s;
+}
+.skin-blue .sidebar-menu li a {
+    border-radius: 16px;
+    border: none
+}
+/* Special states of the sidebar like hover and active */
+.skin-blue .sidebar li:hover a {
+    background: #d3bd9d;
+    color: #583E1A
+}
+.skin-blue .sidebar-menu li.active a {
+    color: #FEF8EF;
+    background: #654612;
+}
+
+/* Format the box */
+.box.box-solid {
+    background: #ede3d3;
+    /* background: white; */
+    border-radius: 16px;
+    padding: 16px
+}
+
+.box-header.with-border{
+    border-bottom: none;
+}
+.box-header .box-title, .box-header .fa, .box-header .glyphicon, .box-header .ion{
+    /* font-family: 'Fasthand', cursive !important; */
+    font-family: 'Roboto', sans-serif;
+    color: rgb(55, 35, 1)
+}
+
+.box-header .box-title {
+    font-weight: 900;
+    font-size: x-large
+}
+
+.nav-tabs-custom {
+    background: #E9DFCF;
+    border-radius: 16px;
+    padding: 16px;
+}
+.nav-tabs-custom .tab-content {
+    border-radius: 16px;
+    background: none
+}
+.nav-tabs-custom .nav-tabs {
+    padding: 4px 4px;
+    border: none !important;
+}
+
+.nav-tabs-custom .nav-tabs li{
+    border: Solid 2px #583E1A !important;
+    border-radius: 12px;
+    margin: 4px 4px 4px 0;
+}
+
+.nav-tabs-custom .nav-tabs li.active,
+.nav-tabs-custom .nav-tabs li.active:hover{
+    background: #583E1A;
+    border: Solid 2px #583E1A;
+    border-radius: 12px;
+    font-weight: 700;
+}
+.nav-tabs-custom .nav-tabs li a{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 12px;
+    background: none;
+    color: #583E1A
+}
+.nav-tabs-custom .nav-tabs li a:hover,
+.nav-tabs-custom .nav-tabs li:hover a{
+    padding: 8px 12px;
+    border: none;
+    background: #d3bd9d;
+    border-radius: 12px;
+    color: #583E1A
+}
+.nav-tabs-custom .nav-tabs li.active a,
+.nav-tabs-custom .nav-tabs li.active a:hover,
+.nav-tabs-custom .nav-tabs li.active:hover a{
+    background: none;
+    color: #FEF8EF;
+    border: none !important
+}
+
+/* Demographics */
+.table thead:first-child tr:first-child th {
+    text-align: center !important;
+    border-color: #fff9f0;
+}
+.shiny-table.spacing-s tbody tr td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.table.shiny-table tbody tr td {
+    padding-right: 16px;
+    padding-left: 16px;
+    border-color: #fff9f0;
+}
+
+/* Format plot objects */
+.shiny-plot-output {
+    max-width: 800px !important;
+}
+
