@@ -31,7 +31,7 @@ ui <- fluidPage(
       sidebarMenu(
         menuItem("Background", tabName= "background", icon=tags$i(class = "material-icons", "article", style = "font-size:inherit;")),
         menuItem("The Study", tabName= "study", icon=tags$i(class = "material-icons", "bar_chart", style = "font-size:inherit;")),
-        menuItem("Conclusion", tabName= "conclusion", icon=tags$i(class = "material-icons", "bar_chart", style = "font-size:inherit;")),
+        menuItem("Conclusions", tabName= "conclusion", icon=tags$i(class = "material-icons", "psychology", style = "font-size:inherit;")),
         menuItem("Related Material", tabName= "materials", icon=tags$i(class = "material-icons", "link", style = "font-size:inherit;"))
       ) #Closes sidebarMenu
     ), #Closes dashboardSidebar
@@ -47,6 +47,7 @@ ui <- fluidPage(
                 fluidRow(
                   box(width = 6,
                       title = "1. What is the goal of the study?",
+                      p("This web app accompanies the the paper titled 'Control of Memory Retrieval Alters Memory-Based Eye Movements' published in the Journal of Experimental Psychology: Learning, Memory and Cognition in 2023. The information presented here is a summary of the results reported in the paper, and is meant for a non-scientific audience. The app was created by Mrinmayi Kulkarni, the first author on the paper."),
                       p(HTML("Past studies have shown that our memories can influence what we pay attention to. For instance, driving through a neighbourhood might remind you about a dinner you had there with a friend. This memory, in turn, will increase the likelihood that your attention is drawn to the restaurant when you pass by it (see study by Nickel and colleagues, 2020).")),
                       p(HTML("But what happens to attention when you inttentionally try to control the retrieval of that memory? Will the restaurant still draw your attention? Can you reduce the influence of that memory on your attention if you attempt to suppress it? Does your memory for that event get worse if you suppress it?"))
                   ), #Close goal box
