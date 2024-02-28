@@ -144,7 +144,8 @@ ui <- fluidPage(
                   ), #Close discussion box
                   box(width = 12,
                       title = "Questions? Comments? Suggestions?",
-                      p(HTML("You can find me on <s>Twitter</s>"), tags$a(href="https://twitter.com/mrinmayi17", "X"), "or", tags$a(href = "https://www.linkedin.com/in/mrinmayi-kulkarni/", "LinkedIn"), "! 🙂")
+                      p(HTML("You can find me on <s>Twitter</s>"), tags$a(href="https://twitter.com/mrinmayi17", "X"), "or", tags$a(href = "https://www.linkedin.com/in/mrinmayi-kulkarni/", "LinkedIn"), "! 🙂"),
+                      p("Code for this shiny app can be found on my", tags$a(href="https://github.com/mrinmayik/MemoryControlEyeMovements", "Github repository."))
                   )
                 ) #Close fluidRow
         ), #Close conclusion tabItem
@@ -156,7 +157,7 @@ ui <- fluidPage(
                       tags$ul(
                         tags$li(tags$a(href="https://psycnet.apa.org/record/2024-38477-001", "Published article"), "with tons of more information!"),
                         tags$li(tags$a(href="https://osf.io/preprints/psyarxiv/q4fvs", "Full text"), "(Free to view)"),
-                          tags$li(tags$a(href="https://linkinghub.elsevier.com/retrieve/pii/S0010027720301311", "Study by Nickel and colleagues, 2020"), "referenced in the Background tab"))
+                        tags$li(tags$a(href="https://linkinghub.elsevier.com/retrieve/pii/S0010027720301311", "Study by Nickel and colleagues, 2020"), "referenced in the Background tab"))
                   ) #Close discussion box
                 ) #Close fluidRow
         ) #Close conclusion tabItem
